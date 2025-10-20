@@ -1,0 +1,18 @@
+
+version: "3.8"
+services:
+  server:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.server
+    container_name: fanomad_server
+  client1:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.client
+    container_name: fanomad_client1
+  client2:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.client
+    container_name: fanomad_client2

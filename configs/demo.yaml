@@ -1,0 +1,27 @@
+
+seed: 42
+num_clients: 3
+rounds: 3
+aggregation: "fedavg"   # or "fedprox"
+client_fraction: 1.0
+local_epochs: 2
+batch_size: 32
+learning_rate: 0.001
+model: "lstm_ae"        # "mlp_ae" | "lstm_ae" | "tiny_transformer"
+privacy:
+  dp: true
+  clip_norm: 1.0
+  noise_multiplier: 0.6
+  accountant: "moments"
+secure_aggregation:
+  enabled: true
+  mask_modulus: 1000000
+data:
+  kind: "synthetic_ts"  # "synthetic_ts" | "toy_logs"
+  seq_len: 48
+  feature_dim: 8
+  anomaly_rate: 0.05
+metrics:
+  k: 100
+  threshold: "auto"
+device: "cpu"

@@ -1,0 +1,31 @@
+
+[project]
+name = "federated-anomad"
+version = "0.1.0"
+description = "Federated Anomaly Detection for Privacy-Preserving Distributed Systems"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name="Open Research"}]
+dependencies = [
+  "numpy",
+  "scipy",
+  "pandas",
+  "scikit-learn",
+  "torch>=2.0.0",
+  "transformers==4.43.3",
+  "pyyaml",
+  "tqdm",
+  "matplotlib",
+  "rich",
+  "pydantic",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100

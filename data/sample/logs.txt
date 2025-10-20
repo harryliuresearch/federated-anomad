@@ -1,0 +1,4 @@
+INFO 2025-01-01T00:00:00Z serviceA request_id=1 latency=12ms
+INFO 2025-01-01T00:00:01Z serviceB request_id=2 latency=9ms
+WARN 2025-01-01T00:00:02Z serviceA request_id=3 latency=120ms
+ERROR 2025-01-01T00:00:03Z serviceC request_id=4 latency=500ms code=E42
